@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         moviesView.layoutManager = LinearLayoutManager(this)
 
         val moviesData = ArrayList<MoviesViewModel>()
-        fillMoviesWithSampleData(moviesData)
+        fillMoviesWithSampleData(moviesData) //TODO: Fill with custom values
 
         val adapter = MoviesAdapter(moviesData)
         adapter.onItemClick = {

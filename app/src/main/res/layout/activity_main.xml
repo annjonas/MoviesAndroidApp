@@ -15,6 +15,7 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_margin="16dp"
+        android:layout_marginTop="32dp"
         android:autofillHints=""
         android:background="@drawable/search_edit_background"
         android:drawableStart="@drawable/search"
@@ -39,7 +40,7 @@
 
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/show_cinemas_near_you"
         app:backgroundTint="@color/pink"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchBar"
