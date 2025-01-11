@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class MoviesAdapter(private val mList: List<MoviesViewModel>) : RecyclerView.Adapter<MoviesAdapter.ViewHolder>() {
+class MoviesAdapter(private var mList: List<MoviesViewModel>) : RecyclerView.Adapter<MoviesAdapter.ViewHolder>() {
 
     var onItemClick: ((MoviesViewModel) -> Unit)? = null
 
@@ -41,6 +41,11 @@ class MoviesAdapter(private val mList: List<MoviesViewModel>) : RecyclerView.Ada
     // return the number of the items in the list
     override fun getItemCount(): Int {
         return mList.size
+    }
+
+    fun updateData(filteredMoviesData: List<MoviesViewModel>) {
+        mList = filteredMoviesData
+        notifyDataSetChanged()
     }
 
     // Holds the views for adding it to image and text
