@@ -16,6 +16,7 @@ class CinemasActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         initializeCinemasView()
+
     }
 
     private fun initializeCinemasView() {
