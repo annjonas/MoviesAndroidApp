@@ -26,9 +26,7 @@ class CinemasActivity : AppCompatActivity() {
         val cinemasData = ArrayList<CinemasViewModel>()
         fillCinemasWithSampleData(cinemasData) //TODO: Fill with custom values
 
-        val adapter = CinemasAdapter(cinemasData)
-
-        cinemasView.adapter = adapter
+        cinemasView.adapter = CinemasAdapter(cinemasData)
     }
 
     private fun fillCinemasWithSampleData(cinemasData: ArrayList<CinemasViewModel>) {
